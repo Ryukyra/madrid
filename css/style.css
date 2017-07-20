@@ -1,0 +1,322 @@
+/* IMPORT */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+
+/* GENERAL */
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+/* STICKY FOOTER*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 101px;
+}
+
+/* LOGO */
+
+h1 {
+  width: 100%;
+  font-size: 300%;
+  margin: 0;
+  padding: 0.5em 0;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #ab987a;
+}
+
+/* NAVIGATION */
+
+ul {
+  width: 100%;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  background-color: #0f1626;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+  margin-left: 1em;
+}
+
+ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: #f5f5f5;
+}
+
+nav ul li {
+  padding: 0.2em 0.5em;
+  background-color: #ab987a;
+  box-shadow: 2px 2px 0px #f5f5f5;
+}
+
+nav ul a li:hover {
+  background-color: #f5f5f5;
+  color: #ab987a;
+  box-shadow: -2px -2px 0px #ab987a;
+}
+
+/* JUMBOTRON */
+
+img {
+  width: 100%;
+}
+
+p.explore {
+  width: 100%;
+  margin: -3px 0;
+  padding: 1em 0;
+  font-size: 125%;
+  font-weight: bold;
+  color: #ab987a;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+/* CARDS */
+
+.card {
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  color: #f5f5f5;
+}
+
+#card-1 {
+  background-color: #ff5330;
+}
+
+#card-2 {
+  background-color: #ab987a;
+}
+
+#card-3 {
+  background-color: #0f1626;
+}
+
+/* COLUMNS */
+
+#col-1 {
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  color: #0f1626;
+  background-color: #f5f5f5;
+}
+
+#col-2 {
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  color: #0f1626;
+  background-color: #f5f5f5;
+}
+
+div h2 {
+  font-size: 200%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 101px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+footer p {
+  width: 100%;
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  color: #f5f5f5;
+  background-color: #ab987a;
+}
+
+/* INFO PAGE */
+
+.info {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+  font-size: 125%;
+  color: #f5f5f5;
+  background-color: #ff5330;
+}
+
+ol {
+  list-style-type: none;
+  margin: -5px 0;
+  padding: 1em;
+  text-align: left;
+  color: #0f1626;
+  background-color: #f5f5f5;
+}
+
+ol div {
+  width: 50%;
+  float: left;
+}
+
+ol li {
+  text-align: center;
+  padding: 1em 0;
+}
+
+ol div li:first-child {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* CLEARFIX */
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* MEDIA QUERIES */
+
+  /* SMALL */
+
+@media (min-width: 576px) {
+  nav ul li {
+    padding: 0.2em 1em;
+    background-color: #ab987a;
+    box-shadow: 2px 2px 0px #f5f5f5;
+    margin-right: 2em;
+  }
+
+  #jumbotron {
+    width: 80%;
+    margin: 1em auto;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+  /* MEDIUM */
+
+@media (min-width: 768px) {
+  html {
+    position: static;
+    min-height: 100%;
+  }
+
+  body {
+    margin-bottom: 0px;
+  }
+
+  nav ul li {
+    padding: 0.2em 1.5em;
+  }
+
+  nav ul li a:click {
+
+  }
+
+  #jumbotron {
+    width: 70%;
+    margin: 1em auto;
+  }
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 33.33%;
+    float: left;
+    height: 100%;
+    margin-bottom: 1em;
+  }
+
+  #col-1, #col-2 {
+    width: 50%;
+    float: left;
+  }
+
+  #m-t {
+    margin-top: 20px;
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+  }
+
+  footer ul {
+    visibility: hidden;
+  }
+
+  footer p {
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    color: #f5f5f5;
+    background-color: #ab987a;
+  }
+
+}
+
+  /* LARGE */
+
+@media (min-width: 992px) {
+  nav ul li {
+    padding: 0.2em 2.5em;
+  }
+
+  #jumbotron {
+    width: 60%;
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  .col-i {
+    width: 50%;
+    float: left;
+  }
+
+  .col-i p {
+    padding: 2em;
+    font-weight: bold;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .col-i li {
+    text-align: left;
+  }
+}
